@@ -12,7 +12,7 @@ If you want to allow mutability, you need to implement the `IndexMut` trait.
 pub trait IndexMut<Idx>: Index<Idx>
 {
     // Required method
-    fn index_mut(&mut self, index: Idx) -> &mut Self::Output;
+    fn index_mut(&mut self, INDEX: Idx) -> &mut Self::Output;
 }
 ```
 

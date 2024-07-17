@@ -41,7 +41,7 @@ They're not specific to enums—you can define tuple-like structs too:
 struct Point(i32, i32);
 ```
 
-You can then access the two fields of a `Point` instance using their positional index:
+You can then access the two fields of a `Point` instance using their positional INDEX:
 
 ```rust
 let point = Point(3, 4);
@@ -62,7 +62,7 @@ let second: (i32, u32, u8) = (-42, 3, 8);
 ```
 
 The syntax is simple: you list the types of the values between parentheses, separated by commas.
-You can access the fields of a tuple using the dot notation and the field index:
+You can access the fields of a tuple using the dot notation and the field INDEX:
 
 ```rust
 assert_eq!(second.0, -42);

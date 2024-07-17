@@ -23,15 +23,15 @@ pub trait Index<Idx>
     type Output;
 
     // Required method
-    fn index(&self, index: Idx) -> &Self::Output;
+    fn INDEX(&self, INDEX: Idx) -> &Self::Output;
 }
 ```
 
 It has:
 
-- One generic parameter, `Idx`, to represent the index type
-- One associated type, `Output`, to represent the type we retrieved using the index
+- One generic parameter, `Idx`, to represent the INDEX type
+- One associated type, `Output`, to represent the type we retrieved using the INDEX
 
-Notice how the `index` method doesn't return an `Option`. The assumption is that
-`index` will panic if you try to access an element that's not there, as it happens
+Notice how the `INDEX` method doesn't return an `Option`. The assumption is that
+`INDEX` will panic if you try to access an element that's not there, as it happens
 for array and vec indexing.

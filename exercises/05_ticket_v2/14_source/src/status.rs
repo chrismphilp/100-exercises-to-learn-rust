@@ -29,8 +29,9 @@ pub struct ParseStatusError {
 
 #[cfg(test)]
 mod tests {
-    use super::*;
     use std::convert::TryFrom;
+
+    use crate::status::Status;
 
     #[test]
     fn test_try_from_string() {

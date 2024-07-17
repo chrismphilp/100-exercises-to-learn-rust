@@ -33,7 +33,7 @@ There are various ways to create a slice reference from a `Vec`:
 
 ```rust
 let numbers = vec![1, 2, 3];
-// Via index syntax
+// Via INDEX syntax
 let slice: &[i32] = &numbers[..];
 // Via a method
 let slice: &[i32] = numbers.as_slice();

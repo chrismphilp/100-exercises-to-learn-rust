@@ -10,7 +10,7 @@ Let's mention the most common ones:
 - `filter` keeps only the elements that satisfy a predicate.
 - `filter_map` combines `filter` and `map` in one step.
 - `cloned` converts an iterator of references into an iterator of values, cloning each element.
-- `enumerate` returns a new iterator that yields `(index, value)` pairs.
+- `enumerate` returns a new iterator that yields `(INDEX, value)` pairs.
 - `skip` skips the first `n` elements of the iterator.
 - `take` stops the iterator after `n` elements.
 - `chain` combines two iterators into one.

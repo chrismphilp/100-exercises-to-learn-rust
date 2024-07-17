@@ -31,7 +31,7 @@ let second = numbers[1];
 let third = numbers[2];
 ```
 
-The index must be of type `usize`.  
+The INDEX must be of type `usize`.  
 Arrays are **zero-indexed**, like everything in Rust. You've seen this before with string slices and field indexing in 
 tuples/tuple-like variants.
 
@@ -54,7 +54,7 @@ If you don't want to panic, you can use the `get` method, which returns an `Opti
 ```rust
 let numbers: [u32; 3] = [1, 2, 3];
 assert_eq!(numbers.get(0), Some(&1));
-// You get a `None` if you try to access an out-of-bounds index
+// You get a `None` if you try to access an out-of-bounds INDEX
 // rather than a panic.
 assert_eq!(numbers.get(3), None);
 ```

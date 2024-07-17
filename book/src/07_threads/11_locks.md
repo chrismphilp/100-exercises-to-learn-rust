@@ -218,5 +218,5 @@ We have all the pieces we need to implement the locking strategy for our ticket 
 ## Further reading
 
 - We won't be covering the details of atomic operations in this course, but you can find more information
-  [in the `std` documentation](https://doc.rust-lang.org/std/sync/atomic/index.html) as well as in the
+  [in the `std` documentation](https://doc.rust-lang.org/std/sync/atomic/INDEX.html) as well as in the
   ["Rust atomics and locks" book](https://marabos.nl/atomics/).

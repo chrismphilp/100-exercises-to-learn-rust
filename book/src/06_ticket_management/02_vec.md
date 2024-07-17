@@ -55,13 +55,13 @@ let second = numbers[1];
 let third = numbers[2];
 ```
 
-The index must be of type `usize`.  
+The INDEX must be of type `usize`.  
 You can also use the `get` method, which returns an `Option<&T>`:
 
 ```rust
 let numbers = vec![1, 2, 3];
 assert_eq!(numbers.get(0), Some(&1));
-// You get a `None` if you try to access an out-of-bounds index
+// You get a `None` if you try to access an out-of-bounds INDEX
 // rather than a panic.
 assert_eq!(numbers.get(3), None);
 ```

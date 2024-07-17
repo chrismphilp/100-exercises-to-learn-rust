@@ -42,8 +42,8 @@ This is the correspondence for the main operators:
 | `==` and `!=`            | [`PartialEq`](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html)   |
 | `<`, `>`, `<=`, and `>=` | [`PartialOrd`](https://doc.rust-lang.org/std/cmp/trait.PartialOrd.html) |
 
-Arithmetic operators live in the [`std::ops`](https://doc.rust-lang.org/std/ops/index.html) module,
-while comparison ones live in the [`std::cmp`](https://doc.rust-lang.org/std/cmp/index.html) module.
+Arithmetic operators live in the [`std::ops`](https://doc.rust-lang.org/std/ops/INDEX.html) module,
+while comparison ones live in the [`std::cmp`](https://doc.rust-lang.org/std/cmp/INDEX.html) module.
 
 ## Default implementations
 

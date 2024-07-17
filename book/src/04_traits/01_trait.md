@@ -122,7 +122,7 @@ This is not necessary if:
   It's as if `use std::prelude::*;` was added at the beginning of every Rust module.
 
 You can find the list of traits and types in the prelude in the 
-[Rust documentation](https://doc.rust-lang.org/std/prelude/index.html).
+[Rust documentation](https://doc.rust-lang.org/std/prelude/INDEX.html).
 
 ## References
 

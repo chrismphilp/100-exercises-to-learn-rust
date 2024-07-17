@@ -1,7 +1,3 @@
-// TODO: Implement `Ticket::assigned_to`.
-//  Return the name of the person assigned to the ticket, if the ticket is in progress.
-//  Panic otherwise.
-
 #[derive(Debug, PartialEq)]
 struct Ticket {
     title: String,
@@ -37,15 +33,20 @@ impl Ticket {
             status,
         }
     }
+
     pub fn assigned_to(&self) -> &str {
-        todo!()
+        match &self.status {
+            Status::InProgress { assigned_to } => &assigned_to,
+            _ => panic!("Only `In-Progress` tickets can be assigned to someone")
+        }
     }
 }
 
 #[cfg(test)]
 mod tests {
-    use super::*;
     use common::{valid_description, valid_title};
+
+    use super::*;
 
     #[test]
     #[should_panic(expected = "Only `In-Progress` tickets can be assigned to someone")]
