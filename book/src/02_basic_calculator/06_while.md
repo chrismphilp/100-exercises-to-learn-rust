@@ -21,16 +21,16 @@ For example, we might want to sum the numbers from 1 to 5:
 
 ```rust
 let sum = 0;
-let i = 1;
-// "while i is less than or equal to 5"
-while i <= 5 {
-    // `+=` is a shorthand for `sum = sum + i`
-    sum += i;
-    i += 1;
+let _i = 1;
+// "while _i is less than or equal to 5"
+while _i <= 5 {
+    // `+=` is a shorthand for `sum = sum + _i`
+    sum += _i;
+    _i += 1;
 }
 ```
 
-This will keep adding 1 to `i` and `i` to `sum` until `i` is no longer less than or equal to 5.
+This will keep adding 1 to `_i` and `_i` to `sum` until `_i` is no longer less than or equal to 5.
 
 ## The `mut` keyword
 
@@ -46,19 +46,19 @@ error[E0384]: cannot assign twice to immutable variable `sum`
   |         first assignment to `sum`
   |         help: consider making this binding mutable: `mut sum`
 ...
-7 |         sum += i;
+7 |         sum += _i;
   |         ^^^^^^^^ cannot assign twice to immutable variable
 
-error[E0384]: cannot assign twice to immutable variable `i`
+error[E0384]: cannot assign twice to immutable variable `_i`
  --> src/main.rs:8:9
   |
-3 |     let i = 1;
+3 |     let _i = 1;
   |         -
   |         |
-  |         first assignment to `i`
-  |         help: consider making this binding mutable: `mut i`
+  |         first assignment to `_i`
+  |         help: consider making this binding mutable: `mut _i`
 ...
-8 |         i += 1;
+8 |         _i += 1;
   |         ^^^^^^ cannot assign twice to immutable variable
 ```
 
@@ -68,13 +68,13 @@ You can't change their value once it has been assigned.
 If you want to allow modifications, you have to declare the variable as **mutable** using the `mut` keyword:
 
 ```rust
-// `sum` and `i` are mutable now!
+// `sum` and `_i` are mutable now!
 let mut sum = 0;
-let mut i = 1;
+let mut _i = 1;
 
-while i <= 5 {
-    sum += i;
-    i += 1;
+while _i <= 5 {
+    sum += _i;
+    _i += 1;
 }
 ```
 

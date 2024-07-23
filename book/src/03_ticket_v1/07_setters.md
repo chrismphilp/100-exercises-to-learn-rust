@@ -25,7 +25,7 @@ Let's see how we can enhance our `Ticket` struct with **setter methods** next.
 ## Setters
 
 Setter methods allow users to change the values of `Ticket`'s private fields while making sure that its invariants
-are respected (i.e. you can't set a `Ticket`'s title to an empty string).
+are respected (_i.e. you can't set a `Ticket`'s title to an empty string).
 
 There are two common ways to implement setters in Rust:
 
@@ -54,7 +54,7 @@ let ticket = Ticket::new("Title".into(), "Description".into(), "To-Do".into());
 let ticket = ticket.set_title("New title".into());
 ```
 
-Since `set_title` takes ownership of `self` (i.e. it **consumes it**), we need to reassign the result to a variable.
+Since `set_title` takes ownership of `self` (_i.e. it **consumes it**), we need to reassign the result to a variable.
 In the example above we take advantage of **variable shadowing** to reuse the same variable name: when 
 you declare a new variable with the same name as an existing one, the new variable **shadows** the old one. This 
 is a common pattern in Rust code.

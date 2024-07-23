@@ -60,7 +60,7 @@ By implementing `Deref<Target = U>` for a type `T` you're telling the compiler t
 somewhat interchangeable.  
 In particular, you get the following behavior:
 
-- References to `T` are implicitly converted into references to `U` (i.e. `&T` becomes `&U`)
+- References to `T` are implicitly converted into references to `U` (_i.e. `&T` becomes `&U`)
 - You can call on `&T` all the methods defined on `U` that take `&self` as input.
 
 There is one more thing around the dereference operator, `*`, but we don't need it yet (see `std`'s docs

@@ -41,8 +41,8 @@ so it can't reserve the right amount of space on the stack.
 But a `String` is not _entirely_ heap-allocated, it also keeps some data on the stack. In particular:
 
 - The **pointer** to the heap region you reserved.
-- The **length** of the string, i.e. how many bytes are in the string.
-- The **capacity** of the string, i.e. how many bytes have been reserved on the heap.
+- The **length** of the string, _i.e. how many bytes are in the string.
+- The **capacity** of the string, _i.e. how many bytes have been reserved on the heap.
 
 Let's look at an example to understand this better:
 
@@ -101,7 +101,7 @@ It depends on the **architecture** of the machine you're running on.
 
 Every memory location on your machine has an [**address**](https://en.wikipedia.org/wiki/Memory_address), commonly
 represented as an unsigned integer.
-Depending on the maximum size of the address space (i.e. how much memory your machine can address), 
+Depending on the maximum size of the address space (_i.e. how much memory your machine can address), 
 this integer can have a different size. Most modern machines use either a 32-bit or a 64-bit address space.  
 
 Rust abstracts away these architecture-specific details by providing the `usize` type:
@@ -137,7 +137,7 @@ or [a custom allocator](https://docs.rs/dhat/latest/dhat/)) to inspect the heap 
 
 - The exercise for this section is located in `exercises/03_ticket_v1/09_heap`
 
-[^empty]: `std` doesn't allocate if you create an **empty** `String` (i.e. `String::new()`).
+[^empty]: `std` doesn't allocate if you create an **empty** `String` (_i.e. `String::new()`).
   Heap memory will be reserved when you push data into it for the first time.
 
 [^equivalence]: The size of a pointer depends on the operating system too.

@@ -3,7 +3,7 @@
 When we introduced [destructors](../../02_ticket_v1/11_destructor/README.md),
 we mentioned that the `drop` function:
 
-1. reclaims the memory occupied by the type (i.e. `std::mem::size_of` bytes)
+1. reclaims the memory occupied by the type (_i.e. `std::mem::size_of` bytes)
 2. cleans up any additional resources that the value might be managing (e.g. the heap buffer of a `String`)
 
 Step 2. is where the `Drop` trait comes in.
@@ -29,7 +29,7 @@ If your type has an explicit `Drop` implementation, the compiler will assume
 that your type has additional resources attached to it and won't allow you to implement `Copy`.
 
 ```rust
-// This is a unit struct, i.e. a struct with no fields.
+// This is a unit struct, _i.e. a struct with no fields.
 #[derive(Clone, Copy)]
 struct MyType;
 

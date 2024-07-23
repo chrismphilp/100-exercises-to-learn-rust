@@ -6,7 +6,7 @@ Let's unpack what that _means_.
 ## Primitive types
 
 `u32` is one of Rust's **primitive types**. Primitive types are the most basic building blocks of a language.
-They're built into the language itself—i.e. they are not defined in terms of other types.
+They're built into the language itself—_i.e. they are not defined in terms of other types.
 
 You can combine these primitive types to create more complex types. We'll see how soon enough.
 
@@ -19,11 +19,11 @@ An integer is a number that can be written without a fractional component. E.g. 
 ### Signed vs. unsigned
 
 An integer can be **signed** or **unsigned**.  
-An unsigned integer can only represent non-negative numbers (i.e. `0` or greater).
+An unsigned integer can only represent non-negative numbers (_i.e. `0` or greater).
 A signed integer can represent both positive and negative numbers (e.g. `-1`, `12`, etc.).
 
 The `u` in `u32` stands for **unsigned**.  
-The equivalent type for signed integer is `i32`, where the `i` stands for integer (i.e. any integer, positive or
+The equivalent type for signed integer is `i32`, where the `_i` stands for integer (_i.e. any integer, positive or
 negative).
 
 ### Bit width
@@ -35,7 +35,7 @@ Rust supports multiple bit widths for integers: `8`, `16`, `32`, `64`, `128`.
 
 With 32 bits, `u32` can represent numbers from `0` to `2^32 - 1` (a.k.a. [`u32::MAX`](https://doc.rust-lang.org/std/primitive.u32.html#associatedconstant.MAX)).  
 With the same number of bits, a signed integer (`i32`) can represent numbers from `-2^31` to `2^31 - 1`
-(i.e. from [`i32::MIN`](https://doc.rust-lang.org/std/primitive.i32.html#associatedconstant.MIN)
+(_i.e. from [`i32::MIN`](https://doc.rust-lang.org/std/primitive.i32.html#associatedconstant.MIN)
 to [`i32::MAX`](https://doc.rust-lang.org/std/primitive.i32.html#associatedconstant.MAX)).  
 The maximum value for `i32` is smaller than the maximum value for `u32` because one bit is used to represent
 the sign of the number. Check out the [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement)

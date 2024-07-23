@@ -30,7 +30,7 @@ It must include a function named `main`—the program's entry point. `main` is i
 
 Libraries, on the other hand, are not executable on their own. You can't _run_ a library, 
 but you can _import its code_ from another package that depends on it.  
-A library groups together code (i.e. functions, types, etc.) that can be leveraged by other packages as a **dependency**.  
+A library groups together code (_i.e. functions, types, etc.) that can be leveraged by other packages as a **dependency**.  
 
 All the exercises you've solved so far have been structured as libraries, with a test suite attached to them.
 

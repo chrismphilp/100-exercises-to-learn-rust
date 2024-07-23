@@ -42,7 +42,7 @@ details on where you can get dependencies from and how to specify them in your `
 
 ## Dev dependencies
 
-You can also specify dependencies that are only needed for development—i.e. they only get pulled in when you're
+You can also specify dependencies that are only needed for development—_i.e. they only get pulled in when you're
 running `cargo test`.  
 They go in the `[dev-dependencies]` section of your `Cargo.toml` file:
 

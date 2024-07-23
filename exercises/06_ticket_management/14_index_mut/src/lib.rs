@@ -1,6 +1,5 @@
-// TODO: Implement `IndexMut<&TicketId>` and `IndexMut<TicketId>` for `TicketStore`.
+use std::ops::{Index, IndexMut};
 
-use std::ops::Index;
 use ticket_fields::{TicketDescription, TicketTitle};
 
 #[derive(Clone)]
@@ -67,6 +66,13 @@ impl Index<TicketId> for TicketStore {
     }
 }
 
+impl IndexMut<TicketId> for TicketStore {
+    fn index_mut(&mut self, index: TicketId) -> &mut Self::Output {
+        self.tickets.iter_mut().find(|v| v.id.0 == index.0)
+            .expect("Unable to find index value")
+    }
+}
+
 impl Index<&TicketId> for TicketStore {
     type Output = Ticket;
 
@@ -75,10 +81,17 @@ impl Index<&TicketId> for TicketStore {
     }
 }
 
+impl IndexMut<&TicketId> for TicketStore {
+    fn index_mut(&mut self, index: &TicketId) -> &mut Self::Output {
+        &mut self[*index]
+    }
+}
+
 #[cfg(test)]
 mod tests {
-    use crate::{Status, TicketDraft, TicketStore};
     use ticket_fields::test_helpers::{ticket_description, ticket_title};
+
+    use crate::{Status, TicketDraft, TicketStore};
 
     #[test]
     fn works() {

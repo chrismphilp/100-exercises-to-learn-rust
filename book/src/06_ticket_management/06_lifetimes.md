@@ -17,7 +17,7 @@ impl IntoIterator for &TicketStore {
 ```
 
 What should `type IntoIter` be set to?  
-Intuitively, it should be the type returned by `self.tickets.iter()`, i.e. the type returned by `Vec::iter()`.  
+Intuitively, it should be the type returned by `self.tickets.iter()`, _i.e. the type returned by `Vec::iter()`.  
 If you check the standard library documentation, you'll find that `Vec::iter()` returns an `std::slice::Iter`.
 The definition of `Iter` is:
 

@@ -13,7 +13,7 @@ The **scope** of a variable is the region of Rust code where that variable is va
 The scope of a variable starts with its declaration.
 It ends when one of the following happens:
 
-1. the block (i.e. the code between `{}`) where the variable was declared ends 
+1. the block (_i.e. the code between `{}`) where the variable was declared ends 
    ```rust
    fn main() {
       // `x` is not yet in scope here

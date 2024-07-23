@@ -56,7 +56,7 @@ impl Ticket {
 ```
 
 It allows you to assign the destructured variable without incurring
-any "right drift", i.e. the variable is assigned at the same indentation level
+any "right drift", _i.e. the variable is assigned at the same indentation level
 as the code that precedes it.
 
 ## Style

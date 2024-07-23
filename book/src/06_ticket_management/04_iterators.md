@@ -97,8 +97,8 @@ is usually faster than
 
 ```rust
 let v = vec![1, 2, 3];
-for i in 0..v.len() {
-    println!("{}", v[i]);
+for _i in 0..v.len() {
+    println!("{}", v[_i]);
 }
 ```
 

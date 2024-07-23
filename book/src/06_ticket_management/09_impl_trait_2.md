@@ -5,8 +5,8 @@ The same syntax can also be used in **argument position**:
 
 ```rust
 fn print_iter(iter: impl Iterator<Item = i32>) {
-    for i in iter {
-        println!("{}", i);
+    for _i in iter {
+        println!("{}", _i);
     }
 }
 ```
@@ -19,8 +19,8 @@ fn print_iter<T>(iter: T)
 where
     T: Iterator<Item = i32>
 {
-    for i in iter {
-        println!("{}", i);
+    for _i in iter {
+        println!("{}", _i);
     }
 }
 ```

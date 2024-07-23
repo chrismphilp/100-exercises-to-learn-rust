@@ -99,8 +99,8 @@ Heap:  | 1 | 2 | ? |
 `Vec` keeps track of three things:
 
 - The **pointer** to the heap region you reserved.
-- The **length** of the vector, i.e. how many elements are in the vector.
-- The **capacity** of the vector, i.e. the number of elements that can fit in the space reserved on the heap.
+- The **length** of the vector, _i.e. how many elements are in the vector.
+- The **capacity** of the vector, _i.e. the number of elements that can fit in the space reserved on the heap.
 
 This layout should look familiar: it's exactly the same as `String`!  
 That's not a coincidence: `String` is defined as a vector of bytes, `Vec<u8>`, under the hood:

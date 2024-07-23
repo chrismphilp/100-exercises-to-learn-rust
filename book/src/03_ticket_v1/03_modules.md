@@ -9,7 +9,7 @@ Let's start with modules.
 
 ## What is a module?
 
-In Rust a **module** is a way to group related code together, under a common namespace (i.e. the module's name).  
+In Rust a **module** is a way to group related code together, under a common namespace (_i.e. the module's name).  
 You've already seen modules in action: the unit tests that verify the correctness of your code are defined in a 
 different module, named `tests`.
 

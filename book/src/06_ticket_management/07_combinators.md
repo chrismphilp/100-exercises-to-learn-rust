@@ -32,7 +32,7 @@ let outcome: u32 = numbers.iter()
 What's going on with the `filter` and `map` methods above?  
 They take **closures** as arguments.
 
-Closures are **anonymous functions**, i.e. functions that are not defined using the `fn` syntax we are used to.  
+Closures are **anonymous functions**, _i.e. functions that are not defined using the `fn` syntax we are used to.  
 They are defined using the `|args| body` syntax, where `args` are the arguments and `body` is the function body.
 `body` can be a block of code or a single expression.
 For example:

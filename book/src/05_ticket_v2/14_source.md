@@ -18,7 +18,7 @@ The `source` method allows you to "walk" the full chain of errors, often used wh
 
 ## Implementing `source`
 
-The `Error` trait provides a default implementation that always returns `None` (i.e. no underlying cause). That's why 
+The `Error` trait provides a default implementation that always returns `None` (_i.e. no underlying cause). That's why 
 you didn't have to care about `source` in the previous exercises.  
 You can override this default implementation to provide a cause for your error type.
 
@@ -53,7 +53,7 @@ Let's unpack it:
 
 - `dyn Error` is a **trait object**. It's a way to refer to any type that implements the `Error` trait.
 - `'static` is a special **lifetime specifier**.
-  `'static` implies that the reference is valid for "as long as we need it", i.e. the entire program execution.
+  `'static` implies that the reference is valid for "as long as we need it", _i.e. the entire program execution.
 
 Combined: `&(dyn Error + 'static)` is a reference to a trait object that implements the `Error` trait 
 and is valid for the entire program execution.
@@ -147,7 +147,7 @@ fn read_file() -> Result<String, std::io::Error> {
 
 You can use the `?` operator to shorten your error handling code significantly.  
 In particular, the `?` operator will automatically convert the error type of the fallible operation into the error type
-of the function, if a conversion is possible (i.e. if there is a suitable `From` implementation)
+of the function, if a conversion is possible (_i.e. if there is a suitable `From` implementation)
 
 ## References
 

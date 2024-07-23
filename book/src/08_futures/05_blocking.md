@@ -4,7 +4,7 @@ Let's circle back to yield points.
 Unlike threads, **Rust tasks cannot be preempted**.
 
 `tokio` cannot, on its own, decide to pause a task and run another one in its place.
-The control goes back to the executor **exclusively** when the task yields—i.e.
+The control goes back to the executor **exclusively** when the task yields—_i.e.
 when `Future::poll` returns `Poll::Pending` or, in the case of `async fn`, when
 you `.await` a future.
 

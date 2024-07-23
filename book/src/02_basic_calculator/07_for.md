@@ -23,12 +23,12 @@ For example, if we want to sum the numbers from 1 to 5:
 
 ```rust
 let mut sum = 0;
-for i in 1..=5 {
-    sum += i;
+for _i in 1..=5 {
+    sum += _i;
 }
 ```
 
-Every time the loop runs, `i` will be assigned the next value in the range before executing the block of code.
+Every time the loop runs, `_i` will be assigned the next value in the range before executing the block of code.
 
 There are five kinds of ranges in Rust:
 
@@ -49,8 +49,8 @@ For example:
 let end = 5;
 let mut sum = 0;
 
-for i in 1..(end + 1) {
-    sum += i;
+for _i in 1..(end + 1) {
+    sum += _i;
 }
 ```
 

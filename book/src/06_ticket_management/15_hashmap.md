@@ -79,10 +79,10 @@ struct Person {
 ## `Eq`
 
 `HashMap` must be able to compare keys for equality. This is particularly important
-when dealing with hash collisions—i.e. when two different keys hash to the same value.
+when dealing with hash collisions—_i.e. when two different keys hash to the same value.
 
 You may wonder: isn't that what the `PartialEq` trait is for? Almost!  
-`PartialEq` is not enough for `HashMap` because it doesn't guarantee reflexivity, i.e. `a == a` is always `true`.  
+`PartialEq` is not enough for `HashMap` because it doesn't guarantee reflexivity, _i.e. `a == a` is always `true`.  
 For example, floating point numbers (`f32` and `f64`) implement `PartialEq`, 
 but they don't satisfy the reflexivity property: `f32::NAN == f32::NAN` is `false`.  
 Reflexivity is crucial for `HashMap` to work correctly: without it, you wouldn't be able to retrieve a value

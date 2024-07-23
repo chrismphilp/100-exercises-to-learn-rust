@@ -43,7 +43,7 @@ fn greeting() -> &'static str {
 
 ### Return type
 
-The return type can be omitted from the signature if the function doesn't return anything (i.e. if it returns `()`,
+The return type can be omitted from the signature if the function doesn't return anything (_i.e. if it returns `()`,
 Rust's unit type).
 That's what happened with the `test_welcome` function:
 

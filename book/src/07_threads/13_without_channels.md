@@ -20,7 +20,7 @@ including reads.
 We then moved to a more sophisticated design, where each ticket was protected by its own lock and
 clients could independently decide if they wanted to read or atomically modify a ticket, acquiring the appropriate lock.  
 
-This design allows for better parallelism (i.e. multiple clients can read tickets at the same time), but it is 
+This design allows for better parallelism (_i.e. multiple clients can read tickets at the same time), but it is 
 still fundamentally **serial**: the server processes commands one by one. In particular, it hands out locks to clients
 one by one.
 

@@ -25,7 +25,7 @@ We've used this extensively in the previous exercises:
 You can modify the default visibility of an entity using a **visibility modifier**.  
 Some common visibility modifiers are:
 
-- `pub`: makes the entity **public**, i.e. accessible from outside the module where it's defined, potentially from 
+- `pub`: makes the entity **public**, _i.e. accessible from outside the module where it's defined, potentially from 
   other crates.
 - `pub(crate)`: makes the entity public within the same **crate**, but not outside of it.
 - `pub(super)`: makes the entity public within the parent module.

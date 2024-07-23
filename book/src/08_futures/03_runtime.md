@@ -42,7 +42,7 @@ across threads.
 
 `tokio::spawn` is flavor-agnostic: it'll work no matter if you're running on the multithreaded 
 or current-thread runtime. The downside is that the signature assume the worst case 
-(i.e. multithreaded) and is constrained accordingly:
+(_i.e. multithreaded) and is constrained accordingly:
 
 ```rust
 pub fn spawn<F>(future: F) -> JoinHandle<F::Output>
